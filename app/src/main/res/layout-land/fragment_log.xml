@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FADADD"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- LEFT: Mood Prompt and triangle-shaped emojis -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/moodPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How do you feel today?"
+            android:fontFamily="@font/alte_haas_grotesk_bold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#5A4A42"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/happyImage"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/ic_happy" />
+
+            <ImageView
+                android:id="@+id/sadImage"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/ic_sad" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/angryImage"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_angry" />
+
+    </LinearLayout>
+
+    <!-- RIGHT: Reflection + Buttons -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <EditText
+            android:id="@+id/reflectionInput"
+            android:layout_width="339dp"
+            android:layout_height="103dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edittext_bg"
+            android:fontFamily="@font/alte_haas_grotesk_bold"
+            android:gravity="center"
+            android:hint="@string/reflection_hint"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/saveReflectionButton"
+            style="@style/PillButton"
+            android:text="@string/save_button_text"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/viewHistoryButton"
+            style="@style/PillButton"
+            android:text="@string/view_history_button_text"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/viewStatsButton"
+            style="@style/PillButton"
+            android:text="View Mood Stats" />
+    </LinearLayout>
+</LinearLayout>
+

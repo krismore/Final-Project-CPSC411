@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FADADD"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- RIGHT: Mood Stats Box + Quote -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <LinearLayout
+            android:layout_width="202dp"
+            android:layout_height="228dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/edittext_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/moodStatsTitle"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/alte_haas_grotesk_bold"
+                android:text="Mood stats"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/happyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/alte_haas_grotesk_bold"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sadCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/alte_haas_grotesk_bold"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/angryCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alte_haas_grotesk_bold"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Dynamic Quote from API -->
+        <TextView
+            android:id="@+id/quoteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading quote..."
+            android:textAlignment="center"
+            android:textColor="#5A4A42"
+            android:fontFamily="@font/alte_haas_grotesk_bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+</LinearLayout>
+

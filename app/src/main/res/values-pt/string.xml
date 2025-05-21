@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MoodSnap</string>
+    <string name="mood_happy">Feliz</string>
+    <string name="mood_sad">Triste</string>
+    <string name="mood_angry">Bravo</string>
+    <string name="mood_prompt">Como você está se sentindo hoje?</string>
+    <string name="reflection_hint">Escreva sua reflexão aqui...</string>
+    <string name="save_button_text">Salvar Reflexão</string>
+    <string name="view_history_button_text">Ver Histórico</string>
+    <string name="toast_reflection_saved">Reflexão salva!</string>
+    <string name="toast_write_something">Por favor, escreva algo primeiro!</string>
+    <string name="toast_mood_happy">Você está feliz hoje 😊</string>
+    <string name="toast_mood_sad">Você está triste hoje 😢</string>
+    <string name="toast_mood_angry">Você está bravo hoje 😠</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <style name="PillButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/alte_haas_grotesk_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FADADD</item>
+        <item name="android:background">@drawable/button_pill</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="Theme.FinalProject" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#D88C9C</item>         <!-- dusty rose -->
+        <item name="colorPrimaryDark">#6F5C4D</item>     <!-- earthy brown -->
+        <item name="colorAccent">#A9B796</item>          <!-- olive moss -->
+        <item name="android:windowBackground">#FADADD</item> <!-- light pink -->
+        <item name="android:textColorPrimary">#6F5C4D</item> <!-- earthy brown text -->
+        <item name="fontFamily">@font/alte_haas_grotesk_bold</item>
+
+    </style>
+
+</resources>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FADADD"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/moodPrompt"
+        android:layout_width="235dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/alte_haas_grotesk_bold"
+        android:text="How do you feel today?"
+        android:gravity="center"
+        android:textColor="#5A4A42"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/happyImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_happy" />
+
+        <ImageView
+            android:id="@+id/sadImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_sad" />
+
+        <ImageView
+            android:id="@+id/angryImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_angry" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/reflectionInput"
+        android:layout_width="311dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edittext_bg"
+        android:fontFamily="@font/alte_haas_grotesk_bold"
+        android:gravity="center"
+        android:hint="@string/reflection_hint"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/saveReflectionButton"
+        style="@style/PillButton"
+        android:layout_width="136dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/save_button_text" />
+
+    <Button
+        android:id="@+id/viewHistoryButton"
+        style="@style/PillButton"
+        android:layout_width="136dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/view_history_button_text" />
+
+    <Button
+        android:id="@+id/viewStatsButton"
+        style="@style/PillButton"
+        android:layout_width="134dp"
+        android:text="View Mood Stats" />
+</LinearLayout>

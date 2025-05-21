@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MoodSnap</string>
+
+    <!-- Mood Descriptions -->
+    <string name="mood_happy">Happy</string>
+    <string name="mood_sad">Sad</string>
+    <string name="mood_angry">Angry</string>
+
+
+    <!-- UI Labels -->
+    <string name="mood_prompt">how do u feel today?</string>
+    <string name="reflection_hint">Write your reflection here...</string>
+    <string name="save_button_text">Save Reflection</string>
+
+    <!-- Toasts -->
+    <string name="toast_reflection_saved">reflection saved!</string>
+    <string name="toast_write_something">pls write something first!</string>
+    <string name="toast_mood_happy">ayeee! you feel happy today 🔥</string>
+    <string name="toast_mood_sad">awww, you feel sad today ☹️</string>
+    <string name="toast_mood_angry">oh, you feel angry today 🤨</string>
+
+    <string name="view_history_button_text">View Mood History</string>
+
+</resources>
